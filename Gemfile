@@ -19,7 +19,13 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+
+#Foundation::Rails is a gem that makes it super easy to use Foundation in your upcoming Rails project.
+gem 'foundation-rails'
+
+#A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
