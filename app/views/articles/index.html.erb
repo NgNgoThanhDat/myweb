@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+
+<h2><%= link_to 'New', new_article_path %></h2>
+<% if @articles.count > 0 %>
+  <p>Had <%= @articles.count %> posts</p>
+<% else %>
+  <p>Had no posts</p>
+<% end %>
+
+
+<% @articles.each do |art| %>
+  <h3><%= art.title %></h3>
+  <p><%= art.text %></p>
+  <%= link_to 'Show', article_path(art) %>
+<% end %>
